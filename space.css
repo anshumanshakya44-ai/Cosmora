@@ -1,0 +1,995 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+
+}
+
+.body {
+    min-width: 100vh;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Navbar~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.site-header {
+    background-color: #01004100;
+    backdrop-filter: blur(50px);
+    border-bottom: 2px solid #9538ff;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    box-sizing: border-box;
+    width: 100%;
+    z-index: 1;
+}
+
+.nav-link {
+    width: 90%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: transparent;
+    background-image: -webkit-linear-gradient(30deg,
+            #ffffff,
+            #a938ff,
+            #ffffff,
+            #6293fc,
+            #a938ff,
+            #ffffff,
+            #ffffff,
+            #ffffff);
+    -webkit-background-clip: text;
+    padding-bottom: 7px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+
+.logo::before {
+    content: "🌟";
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+.links {
+    height: 100%;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    padding-bottom: 7px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+    border: 2px solid #a938ff00;
+}
+
+.links:hover {
+    border-bottom: 2px solid #a938ff;
+    color: transparent;
+    background-image: -webkit-linear-gradient(60deg,
+            #a938ff,
+            #ffffff,
+            #a938ff,
+            #9c78ff,
+            #6293fc,
+            #ffffff,
+            #a938ff);
+    -webkit-background-clip: text;
+    cursor: pointer;
+}
+
+.nav-link li:first-child {
+    margin-right: auto;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~hero~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.hero {
+    height: 60vh;
+    /* background-color: #010041; */
+    background-image: url(earth\ space2.png);
+    background-position: right;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    border-bottom: 2px solid #2d2bb6;
+    width: 100%;
+
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 90%;
+    gap: 20px;
+    line-height: 1.1;
+}
+
+.text {
+    font-family: "Momo Trust Display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 100%;
+
+}
+
+.cosmos {
+    font-size: .9rem;
+    color: transparent;
+    background-image: -webkit-linear-gradient(60deg,
+            #a938ff,
+            #8cbcff,
+            #6293fc,
+            #9c78ff,
+            #6293fc,
+            #ffffff,
+            #a938ff);
+    -webkit-background-clip: text;
+}
+
+.explore {
+    font-size: 4rem;
+    color: #ffffff;
+}
+
+.explore2 {
+    font-size: 4rem;
+    color: transparent;
+    background-image: -webkit-linear-gradient(0deg,
+            #a938ff,
+            #af82f9,
+            #97c8ff,
+            #99e7fd,
+            #00b0fd,
+            #ffffff,
+            #a938ff);
+    -webkit-background-clip: text;
+}
+
+.explore3 {
+    font-size: 1.7rem;
+    color: transparent;
+    background-image: -webkit-linear-gradient(0deg,
+            #ffffff,
+            #af82f9,
+            #ffffff,
+            #ffffff,
+            #99e7fd,
+            #ffffff);
+    -webkit-background-clip: text;
+}
+
+.para {
+    width: 80%;
+    font-size: 0.8rem;
+    font-family:
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Oxygen,
+        Ubuntu,
+        Cantarell,
+        "Open Sans",
+        "Helvetica Neue",
+        sans-serif;
+    font-weight: 500;
+    color: #dddcff;
+    text-align: center;
+}
+
+.para2 {
+    width: 50%;
+    font-size: 1rem;
+    font-family:
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Oxygen,
+        Ubuntu,
+        Cantarell,
+        "Open Sans",
+        "Helvetica Neue",
+        sans-serif;
+    font-weight: 500;
+    color: #dddcff;
+}
+
+.para3 {
+    width: 60%;
+    font-size: 0.8rem;
+    font-family:
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Oxygen,
+        Ubuntu,
+        Cantarell,
+        "Open Sans",
+        "Helvetica Neue",
+        sans-serif;
+    font-weight: 500;
+    color: #dddcff;
+    text-align: center;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 15px;
+    border-radius: 100px;
+    font-size: 1rem;
+    font-family:
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Oxygen,
+        Ubuntu,
+        Cantarell,
+        "Open Sans",
+        "Helvetica Neue",
+        sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    border: 2px solid #e226fc;
+    background-color: #b675f73e;
+}
+
+.btn1 {
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.btn:hover {
+    background-image: -webkit-linear-gradient(0deg,
+            #e226fc,
+            #9a42fb,
+            #6854ff,
+            #486aff,
+            #00b4ff);
+    box-shadow: 20px 0 80px #00b4ff, -20px 0 80px #e226fc;
+    border: 2px solid #6854ff;
+}
+
+.btn2 {
+
+    color: #fff;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Main-1~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.main-1 {
+    height: 40vh;
+    background-image: url(galaxy\ sat\ astro.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #2d2bb6;
+    width: 100%;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 45%;
+    position: relative;
+    overflow: hidden;
+}
+
+.astro {
+    position: absolute;
+    left: 10%;
+    width: 130px;
+    animation: floatAstronaut 6s ease-in-out infinite;
+    transition: all 0.7s ease-out;
+
+
+}
+
+.astro:hover {
+    filter: drop-shadow(0 0 20px rgba(77, 125, 244, 0.567));
+
+}
+
+@keyframes floatAstronaut {
+    0% {
+        transform: translateY(0px)
+    }
+
+    25% {
+        transform: translateY(-15px)
+    }
+
+    50% {
+        transform: translateY(0px)
+    }
+
+    75% {
+        transform: translateY(15px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.saturn {
+    position: absolute;
+    right: 10%;
+    top: 83%;
+    width: 250px;
+    animation: floatSaturn 6s linear infinite;
+    transition: all 0.7s ease-out;
+
+}
+
+.saturn:hover {
+    filter: drop-shadow(0 0 20px #ffda9666);
+
+}
+
+@keyframes floatSaturn {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    25% {
+        transform: rotate(-5deg)
+    }
+
+    50% {
+        transform: rotate(0deg)
+    }
+
+    75% {
+        transform: rotate(5deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+.star{
+     position: absolute;
+    right: 10%;
+    top: 30%;
+    width: 250px;
+    animation: floatAstronaut 6s ease-in-out infinite;
+    transition: all 0.7s ease-out;
+}
+.star:hover {
+    filter: drop-shadow(0 0 20px rgba(244, 77, 77, 0.681));
+
+}
+
+.main-heading {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wonders {
+    color: white;
+    font-size: 1.6rem;
+}
+
+.cosmos1 {
+    font-size: 1.2rem;
+    color: transparent;
+    background-image: -webkit-linear-gradient(0deg,
+            #a938ff,
+            #a938ff,
+            #6293fc,
+            #6293fc,
+            #6293fc,
+            #ffffff);
+    -webkit-background-clip: text;
+}
+
+.wonders1 {
+    font-size: 1.6rem;
+    color: transparent;
+    background-image: -webkit-linear-gradient(0deg,
+            #a938ff,
+            #af82f9,
+            #97c8ff,
+            #99e7fd,
+            #00b0fd);
+    -webkit-background-clip: text;
+}
+
+.wonders2 {
+    color: white;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.text1 {
+    font-family: "Momo Trust Display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 100%;
+    text-align: center;
+
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Main-2~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.main-2 {
+    height: 50vh;
+    /* background-color: #010041; */
+    background-image: url(earth\ ring.png);
+    background-position: right;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #2d2bb6;
+}
+
+.main-contatiner-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 90%;
+    gap: 20px;
+}
+
+.main-text {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+}
+
+.main-3 {
+    height: auto;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    height: auto;
+    border-bottom: 2px solid #2d2bb6;
+}
+
+.planet-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.planet-text {
+    margin-bottom: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+
+
+}
+
+.title {
+    color: #ffffff;
+}
+
+.title2 {
+    color: #a938ff;
+}
+
+.head {
+    color: #a938ff;
+    font-weight: 700;
+}
+
+.head2 {
+    color: #fff;
+    font-weight: 700;
+}
+
+.info {
+    color: transparent;
+    background-image: -webkit-linear-gradient(0deg,
+            #a938ff,
+            #af82f9,
+            #97c8ff,
+            #99e7fd,
+            #00b0fd);
+    -webkit-background-clip: text;
+    font-weight: 500;
+}
+
+.info:hover {
+    text-shadow: 5px 0 20px #99e7fd, -5px 0 20px #a938ff;
+}
+
+.box {
+    flex: 0 0 auto;
+
+    height: 250px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 20px;
+    transition: all 0.3s ease-out;
+    background-color: #010041;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    border: 2px solid #2d2bb6;
+
+
+}
+
+.box1 {
+    align-self: start;
+    padding: 10px;
+}
+
+.box-1 {
+    background-image: url(earth\ space.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.box-2 {
+    background-image: url(mars.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.box-3 {
+    background-image: url(jupiter.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.box-4 {
+    background-image: url(saturn2.png);
+    background-position: center;
+    background-size: cover;
+}
+.box-5 {
+    background-image: url();
+    background-position: center;
+    background-size: cover;
+}
+.box-6 {
+    background-image: url(rover.png);
+    background-position: center;
+    background-size: cover;
+}
+.box-7 {
+    background-image: url(hubble.png);
+    background-position: center;
+    background-size: cover;
+}
+.box-8 {
+    background-image: url(iss.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.box2 {
+    flex: 0 0 auto;
+    height: 175px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 20px;
+    transition: all 0.3s ease-out;
+    background-color: #010041;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    border: 2px solid #2d2bb6;
+}
+
+.box:hover {
+    box-shadow: 0 0 50px #6665b4;
+    cursor: pointer;
+    transform: scale(1.1);
+
+}
+
+.box2:hover {
+    box-shadow: 0 0 50px #6665b4;
+    cursor: pointer;
+    transform: scale(1.1);
+
+
+}
+
+.main-4 {
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: url(bg\ astro.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    border-bottom: 2px solid #2d2bb6;
+}
+
+.planet-box2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    width: 80%;
+    max-width: 1200px;
+    margin-right: 150px ;
+    padding: 10px;
+    align-items: center;
+}
+
+.main-5 {
+    height: auto;
+    padding: 30px;
+    background-color: #010113;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #2d2bb6;
+}
+
+.stat-planet3 {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(min(100%, 450px), 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.box-Statistics {
+    height: 175px;
+    width: 100%;
+    background-color: #010041;
+    border: 2px solid #2d2bb6;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 950px) {
+    .stat-planet3 {
+        grid-template-columns: repeat(2, minmax(min(100%, 250px), 1fr));
+    }
+}
+
+@media (max-width: 1024px) {
+    .stat-planet3 {
+        grid-template-columns: repeat(2, minmax(min(100%, 200px), 1fr));
+    }
+}
+
+@media (max-width: 650px) {
+    .stat-planet3 {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .stat-planet3 {
+        grid-template-columns: repeat(1, minmax(min(100%, 175px), 1fr));
+    }
+}
+
+.stats-card {
+
+    border-radius: 16px;
+    padding: 24px;
+    width: 100%;
+    max-width: 500px;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    color: #ffffff;
+}
+
+
+.card-header {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #8b5cf6;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.card-header .dash {
+    color: #6d28d9;
+}
+
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    text-align: center;
+}
+
+.stats-grid2 {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 1px;
+    text-align: center;
+}
+
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+.stat-item .icon {
+    font-size: 1.25rem;
+    margin-bottom: 12px;
+    color: #c084fc;
+
+    filter: drop-shadow(0 0 6px rgba(192, 132, 252, 0.6));
+}
+
+
+.stat-value {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 6px;
+    letter-spacing: -0.5px;
+}
+
+.stat-value2 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #ffffff;
+    margin-bottom: 6px;
+    letter-spacing: -0.5px;
+}
+
+
+.stat-label {
+    font-size: 0.7rem;
+    color: #94a3b8;
+    line-height: 1.2;
+}
+
+.main-6 {
+    height: 50vh;
+ background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(mount.png);    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #2d2bb6;
+    gap: 15px;
+}
+
+.main-container3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    gap: 15px;
+}
+
+/* ==========================================
+                MEDIA QUERIES
+   ========================================== */
+@media (max-width: 1200px) {
+    .hero {
+        width: 100%;
+    }
+
+    .hero .explore,
+    .explore2 {
+        font-size: 4rem;
+    }
+
+    .site-header {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 968px) {
+    .hero {}
+
+    .hero .explore,
+    .explore2 {
+        font-size: 3rem;
+    }
+    .main-4{
+        background-color: #000000;
+        background-image: none;
+    }
+    .planet-box2{
+        margin: 0 auto;
+    }
+}
+
+@media (max-width:868px) {
+    .hero {}
+
+    .hero-text,
+    .hero-container,
+    .main-text,
+    .main-contatiner-2 {
+        text-align: center;
+        align-items: center;
+    }
+
+    .astro {
+        width: 100px;
+    }
+    .star{
+        width: 175px;
+        top: 35%;
+        right: 5%;
+    }
+
+    .saturn {
+        width: 175px;
+        right: 5%;
+    }
+
+    .hero-button {
+        flex-direction: column;
+    }
+
+    .links {
+        padding: 0 15px;
+    }
+
+    .main-container3 {
+        width: 90%;
+    }
+
+    .hero .explore,
+    .explore2 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width:600px) {
+    .main-container {
+        width: 60%;
+    }
+
+    .para {
+        width: 100%;
+    }
+
+    .astro,
+    .saturn,.star {
+        /* display: none; */
+        opacity: 0%;
+    }
+
+    .main-1,
+    .main-2 {
+        background-position: center;
+        background-size: cover;
+    }
+
+    .main-2 {
+        background-image: url(earth\ ring2.png);
+
+    }
+
+    .hero {
+        background-image: url(earth\ space.png);
+        background-position: bottom;
+        background-size: cover;
+    }
+    .main-4{
+        background-color: #000000;
+        
+    }
+
+
+    .explore,
+    .cosmos {
+        -webkit-text-stroke: 0.6px black;
+    }
+
+}
+
+
+@media (max-width:480px) {
+    .hero {}
+
+
+    .hero-text,
+    .main-text,
+    .main-contatiner-2 {
+        text-align: center;
+        align-items: center;
+    }
+
+    .hero-container {
+        align-items: center;
+        text-align: center;
+
+    }
+
+    .main-container3 {
+        width: 90%;
+        gap: 10px;
+    }
+
+    .hero-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .hero .explore,
+    .explore2 {
+        font-size: 2rem;
+    }
+
+    .para2 {
+        font-size: 0.7rem;
+    }
+}
