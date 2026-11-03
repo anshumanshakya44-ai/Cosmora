@@ -97,7 +97,7 @@
 .hero {
     height: 60vh;
     /* background-color: #010041; */
-    background-image: url(assets/earth\ space2.png);
+    background-image: url(https://drive.google.com/thumbnail?id=1tsVKVsIwLS-CjtPgs0dG_lpsKVnF2jHX&sz=s800);
     background-position: right;
     background-size: cover;
     display: flex;
@@ -294,10 +294,9 @@
 
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Main-1~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-
 .main-1 {
     height: 40vh;
-    background-image: url(assets/galaxy\ sat\ astro.png);
+    background-image: url(https://drive.google.com/thumbnail?id=1D6hwcau5hxDlrNPsKt9EYEh1CVJUse-b&sz=s800);
     background-position: center;
     background-size: cover;
     display: flex;
@@ -462,7 +461,7 @@
 .main-2 {
     height: 50vh;
     /* background-color: #010041; */
-    background-image: url(assets/earth\ ring.png);
+    background-image: url(https://drive.google.com/thumbnail?id=1YHQn9gWtUok2oSVyMRxW2YwLVpZOIPz0&sz=s800);
     background-position: right;
     background-size: cover;
 
@@ -576,45 +575,50 @@
 }
 
 .box-1 {
-    background-image: url(assets/earth\ space.png);
+    background-image: url(https://drive.google.com/thumbnail?id=1r_tA-89Kq8OPXzEtk5gMNIWMeY-AzlCf);
     background-position: center;
     background-size: cover;
 }
 
 .box-2 {
-    background-image: url(assets/mars.png);
+    background-image: url(https://drive.google.com/thumbnail?id=1U5gYXQjiUcI3csrVn1lHymRrl0vA0WKQ);
     background-position: center;
     background-size: cover;
 }
 
+
 .box-3 {
-    background-image: url(assets/jupiter.png);
+    background-image: url(https://drive.google.com/thumbnail?id=1iReJY_IUYNTZL8o5FJRJpFYf-GuVcqTL);
     background-position: center;
     background-size: cover;
 }
 
 .box-4 {
-    background-image: url(assets/saturn2.png);
+    background-image: url(https://drive.google.com/thumbnail?id=1HPSYLKEXKfDvkE9w1A0MJUQFlkfdYMiM);
     background-position: center;
     background-size: cover;
 }
+
 .box-5 {
-    background-image: url(assets/galaxy.png);
+    background-image: url(https://www.nasa.gov/wp-content/uploads/2023/06/48264704227-429c94870f-4k.jpg?w=680);
     background-position: center;
     background-size: cover;
 }
 .box-6 {
-    background-image: url(assets/rover.png);
+    background-image: url(https://drive.google.com/thumbnail?id=15KX3tFS385fd8Akn_EwrgPBaX-m3FvTU);
     background-position: center;
     background-size: cover;
 }
+
 .box-7 {
-    background-image: url(assets/hubble.png);
+    background-image: url(https://drive.google.com/thumbnail?id=1H9VQzu2nAjCRUH7kTJOFRFVCm9Grf-Ra);
     background-position: center;
     background-size: cover;
 }
+
+
 .box-8 {
-    background-image: url(assets/iss.png);
+    background-image: url(https://drive.google.com/thumbnail?id=1mlZOnL7yZnYJQJ9hku02ErIwMHWn7gS_);
     background-position: center;
     background-size: cover;
 }
@@ -652,7 +656,7 @@
     height: auto;
     padding-top: 50px;
     padding-bottom: 50px;
-    background-image: url(assets/bg\ astro.png);
+    background-image: url(https://drive.google.com/thumbnail?id=1SsXQ6vEtTsw7Z75HnXQQAvB4exKVdpZr&sz=s800);
     background-position: center;
     background-size: cover;
     display: flex;
@@ -815,7 +819,7 @@
 
 .main-6 {
     height: 50vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(assets/mount.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(https://drive.google.com/thumbnail?id=1psnLUR9EN1LhdEmwFEhEZE9BvZv2rzc9&sz=s800);
     background-position: center;
     background-size: cover;
     display: flex;
@@ -935,12 +939,12 @@
     }
 
     .main-2 {
-        background-image: url(assets/earth\ ring2.png);
+        background-image: url(https://drive.google.com/thumbnail?id=16mWtKPSEibU2OxxwIMdpaItGWMnmSI4-&sz=s800);
 
     }
 
     .hero {
-        background-image: url(assets/earth\ space.png);
+        background-image: url(https://drive.google.com/thumbnail?id=1r_tA-89Kq8OPXzEtk5gMNIWMeY-AzlCf&sz=s800);
         background-position: bottom;
         background-size: cover;
     }
