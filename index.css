@@ -12,14 +12,16 @@
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Navbar~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 .site-header {
     background-color: #01004100;
-    backdrop-filter: blur(50px);
+    backdrop-filter: blur(15px);
     border-bottom: 2px solid #9538ff;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     position: fixed;
     box-sizing: border-box;
     width: 100%;
     z-index: 1;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .nav-link {
@@ -88,9 +90,20 @@
     cursor: pointer;
 }
 
-.nav-link li:first-child {
-    margin-right: auto;
+.close,
+.open {
+    height: 30px;
 }
+
+.open-close {
+    display: none;
+    background-color: transparent;
+    border: none;
+}
+
+/* .nav-link li:first-child {
+    margin-right: auto;
+} */
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~hero~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
@@ -288,7 +301,7 @@
 .btn2 {
 
     color: #fff;
-        transition: all 0.5s ease;
+    transition: all 0.5s ease;
 
 }
 
@@ -391,14 +404,16 @@
         transform: rotate(0deg);
     }
 }
-.star{
-     position: absolute;
+
+.star {
+    position: absolute;
     right: 10%;
     top: 30%;
     width: 250px;
     animation: floatAstronaut 6s ease-in-out infinite;
     transition: all 0.7s ease-out;
 }
+
 .star:hover {
     filter: drop-shadow(0 0 20px rgba(244, 77, 77, 0.681));
 
@@ -537,7 +552,7 @@
 
 .info {
     color: transparent;
-     background-image: -webkit-linear-gradient(0deg,
+    background-image: -webkit-linear-gradient(0deg,
             #a938ff,
             #af82f9,
             #97c8ff,
@@ -604,6 +619,7 @@
     background-position: center;
     background-size: cover;
 }
+
 .box-6 {
     background-image: url(https://drive.google.com/thumbnail?id=15KX3tFS385fd8Akn_EwrgPBaX-m3FvTU);
     background-position: center;
@@ -673,7 +689,7 @@
     gap: 20px;
     width: 80%;
     max-width: 1200px;
-    margin-right: 150px ;
+    margin-right: 150px;
     padding: 10px;
     align-items: center;
 }
@@ -826,7 +842,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-bottom: 2px solid #2d2bb6;
     gap: 15px;
 }
 
@@ -865,13 +880,18 @@
     .explore2 {
         font-size: 3rem;
     }
-    .main-4{
+
+    .main-4 {
         background-color: #000000;
         background-image: none;
     }
-    .planet-box2{
+
+    .planet-box2 {
         margin: 0 auto;
     }
+
+
+
 }
 
 @media (max-width:868px) {
@@ -885,10 +905,13 @@
         align-items: center;
     }
 
+
+
     .astro {
         width: 100px;
     }
-    .star{
+
+    .star {
         width: 175px;
         top: 35%;
         right: 5%;
@@ -917,6 +940,55 @@
     }
 }
 
+@media(max-width:768px) {
+    .site-header {
+        height: 70px;
+    }
+
+    .nav-link {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: #0000008a;
+        border: 2px solid #e226fc;
+        border-radius: 20px;
+        width: 40vw;
+        height: 70vh;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        padding-left: 5%;
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+        transition: all 0.2s;
+    }
+
+    .nav-open {
+        opacity: 1;
+        pointer-events: auto;
+        visibility: visible;
+    }
+
+    .open-close {
+        display: block;
+        z-index: 1001;
+    }
+
+    .close {
+        display: none;
+
+    }
+
+    .menu-opened .open {
+        display: none;
+    }
+
+    .menu-opened .close {
+        display: block;
+    }
+}
+
 @media (max-width:600px) {
     .main-container {
         width: 60%;
@@ -927,7 +999,8 @@
     }
 
     .astro,
-    .saturn,.star {
+    .saturn,
+    .star {
         /* display: none; */
         opacity: 0%;
     }
@@ -948,9 +1021,10 @@
         background-position: bottom;
         background-size: cover;
     }
-    .main-4{
+
+    .main-4 {
         background-color: #000000;
-        
+
     }
 
 
@@ -971,6 +1045,9 @@
     .main-contatiner-2 {
         text-align: center;
         align-items: center;
+    }
+    .nav-link{
+          width: 50vw;
     }
 
     .hero-container {
