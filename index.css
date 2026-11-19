@@ -974,9 +974,13 @@
         display: block;
         z-index: 1001;
     }
+    .open{
+        height: 30px;
+    }
 
     .close {
         display: none;
+        height: 30px;
 
     }
 
